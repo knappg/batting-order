@@ -35,3 +35,15 @@ Now, we represent each batter with their stat pairs, for example:
 ```
 
 The problem we then face is to find the ways in which the permutations of these batter data are similar within percentile ranges (i.e. how are batter permutations within the top 1% similar?).
+
+Idea:
+
+- _n_ is the number of tracked attributes for a player
+- _m_ is the number of players
+- **1(x)** is the vector of all ones of length _x_
+
+Consider a player as a vector of attributes: x<sub>0</sub>, x<sub>1</sub>, x<sub>2</sub> ... x<sub>n</sub>. Call the matrix of all these player vectors _X_. _X_ is an _n_ x _m_ matrix.
+
+Now let's imagine that there's a set of associated co-efficients that match to each attribute: a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub> ... a<sub>n</sub>. Call this vector _A_. _A_ has _n_ elements.
+
+Is there some set of co-efficients, such that (A<sup>-1</sup>·X)·**1(m)** is minimized?

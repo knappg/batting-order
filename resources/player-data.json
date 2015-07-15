@@ -1,0 +1,76 @@
+{
+  "players":[
+    {
+      "name": "Player 1",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 2",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 3",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 4",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 5",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 6",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 7",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 8",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    },
+    {
+      "name": "Player 9",
+      "atBats": 100,
+      "singles": 35,
+      "doubles": 15,
+      "triples": 3,
+      "homeRuns": 9
+    }
+  ]
+}

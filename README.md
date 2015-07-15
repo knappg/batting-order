@@ -7,6 +7,10 @@ This repository attempts to answer the following questions:
 - _"How far off are the Seattle Mariners (on average) from the statistically optimal batting order"_
 - _"What are patterns of good batting order strategies vs. bad batting order strategies"_
 
+## Results
+
+Coming soon... I hope!
+
 ## Strategy
 
 We're using just about the most simple strategy imaginable.

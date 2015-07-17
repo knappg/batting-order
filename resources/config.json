@@ -1,4 +1,13 @@
 {
   "numGameSimulations": 100,
-  "marinersCurrentLineup": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  "marinersCurrentLineup": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  "databaseConfig": {
+    "client": "pg",
+    "connection": {
+      "host"     : "127.0.0.1",
+      "user"     : "some_user",
+      "password" : "some_pass",
+      "database" : "postgres"
+    }
+  }
 }

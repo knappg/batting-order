@@ -20,6 +20,10 @@ First, some assumptions:
 - Assume that the performance of a batter, so far in the current (2015) season, is truly representative of their skills. This is a weak assumption because the number of at-bats is nowhere near statistically significant, but we've got to work with what we've got.
 - Always assume a full 9 innings are played.
 - Ignore defensive prowess entirely. We only care about batting order of a fixed line-up.
+- Base running variable scenarios with on-base players:
+  * A player is on first and a single is hit: 50% chance they go to second, 50% chance they go to third.
+  * A player is on first and a double is hit: 95% chance they score, 5% chance they go to third.
+  * A player is on second and a single is hit: 70% chance they score, 30% chance they go to third.
 
 Our strategy is just to simulate the average runs scored for every permutation of the line-up. We simulate 1,000 games (which is variable) for each line-up, where a full game is played, using the player's current probability of walk, single, double, triple, home run and out to simulate the outcome of their at-bat.
 

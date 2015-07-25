@@ -1,24 +1,21 @@
-var playerData = require('./resources/player-data.json');
 var simulation = require('./util/simulation');
+var util = require('./util/util');
 var dao = require('./util/lineup-dao');
-var dao2 = require('./util/lineup-dao');
 
-console.time('test');
-var runs = 0;
-for (var i = 0; i < 1; i++) {
-  runs += simulation.simulateGames(playerData.players);
-}
-console.timeEnd('test');
-console.log(runs);
+var totalSims = 0;
+var gen = util.combinationGenerator(9);
 
-var averageRuns = [2.1, 3.1];
-var lineupData = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+var processNextLineup = function() {
+  var nextLineupData = gen.next();
+  if (nextLineupData.done) {
+    process.exit();
+  }
+  totalSims++;
+  if (totalSims % 1000 === 0) {
+    console.log('Processed batch ' + (totalSims / 1000) + ' thousand');
+  }
+  var runs = simulation.simulateGames(nextLineupData.value);
+  dao.saveLineup(nextLineupData.value, runs).then(processNextLineup);
+};
 
-var promises = [];
-averageRuns.forEach(function(averageRun) {
-  promises.push(dao.saveLineup(lineupData, averageRun));
-});
-
-Promise.all(promises).then(function(){
-  process.exit();
-});
+processNextLineup();

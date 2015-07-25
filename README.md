@@ -9,7 +9,10 @@ This repository attempts to answer the following questions:
 
 ## Results
 
-Coming soon... I hope!
+![Image of Results](http://i.imgur.com/s2hrKLR.png)
+
+- Standard deviation of lineup runs: 0.0811 runs
+- Average of lineup runs: 3.336 runs
 
 ## Strategy
 
@@ -46,7 +49,7 @@ Idea:
 - _m_ is the number of players
 - **1(x)** is the vector of all ones of length _x_
 
-Consider a player as a vector of attributes: x<sub>0</sub>, x<sub>1</sub>, x<sub>2</sub> ... x<sub>n</sub>. Call the matrix of all these player vectors _X_. _X_ is an _n_ x _m_ matrix.
+Consider a lineup as a vector of attributes (perhaps on base percentage plus slugging for all its players): x<sub>0</sub>, x<sub>1</sub>, x<sub>2</sub> ... x<sub>n</sub>. Call the matrix of all these lineup vectors _X_. _X_ is an _n_ x _m_ matrix.
 
 Now let's imagine that there's a set of associated co-efficients that match to each attribute: a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub> ... a<sub>n</sub>. Call this vector _A_. _A_ has _n_ elements.
 

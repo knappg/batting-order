@@ -1,3 +1,5 @@
+var playerData = require('../resources/player-data.json').players;
+
 // Some globals
 var battingPossibilities = {
   "OUT": 0,
@@ -119,7 +121,7 @@ function Game(startingLineup) {
   };
 
   this._getBatterResult = function() {
-    var player = this.lineup[this.currentLineupIndex];
+    var player = playerData[this.lineup[this.currentLineupIndex]];
     this.currentLineupIndex++;
     if (this.currentLineupIndex === this.lineup.length) {
       this.currentLineupIndex = 0;

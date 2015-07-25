@@ -1,6 +1,4 @@
 var config = require('../resources/config.json');
-
-console.log('hi');
 var knex = require('knex')(config.databaseConfig);
 
 var dao = {
